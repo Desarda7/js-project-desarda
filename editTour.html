@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekti JavaScript</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">Albanian Tours</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-white">Favourites</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <a href="#"
+              class="btn btn-outline-primary text-white border-white"
+              type="submit"
+            >
+              Create Tour
+            </a>
+          </form>
+        </div>
+       
+    </nav>
+   <div class="container d-flex justify-content-between">
+      <a href="index.html" class="btn btn-outline-primary mt-3 mb-3">Go back</a>
+      <button type="button" class="btn btn-danger mt-3 mb-3" id="deleteBtn">Delete</button>
+    </div>
+</div>
+</div>
+</div>
+    <div class="container shadow p-3 mb-5 bg-body rounded">
+        <h1>Edit tour</h1>
+      <form id="edit-form">
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control mb-3 mt-3"
+            id="exampleInput1"
+            name="title"
+            aria-describedby="titleHelp"
+            placeholder="Title"
+          />
+          <textarea
+            type="text"
+            class="form-control mb-3"
+            id="exampleInput2"
+            name="desc"
+            aria-describedby="descriptionHelp"
+            placeholder="Description"
+          ></textarea>
+
+          <input
+            type="text"
+            class="form-control"
+            name="imageUrl"
+            id="exampleInput3"
+            placeholder="Image url"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="editBtn">Edit tour</button>
+      </form>
+    </div>
+  </body>
+  <script src="editTour.js"></script>
+  <script src="deleteTour.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
+</html>
